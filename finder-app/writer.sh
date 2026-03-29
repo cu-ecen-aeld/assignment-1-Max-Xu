@@ -14,7 +14,7 @@ if [ ! -d "$dirpath" ]; then
     mkdir -p "$dirpath"
 fi
 
-echo "$writestr" > "$writefile" || {
+echo "$writestr" >> "$writefile" || {
     echo "ERROR Issue writing to files."
     exit 1
 }
